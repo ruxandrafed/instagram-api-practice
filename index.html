@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+
+    #photos {
+      position: relative;
+      height: 350px;
+    }
+
+    #photos IMG {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 8;
+    }
+
+    #photos img.active{
+      z-index:10;
+    }
+
+    #photos img.last-active{
+      z-index:9;
+    }
+
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="application.js"></script>
+</head>
+
+<body>
+  <button type="submit" id="get_photos_button">Get photos</button>
+
+  <div id="photos">
+
+  </div>
+
+</body>
+
+</html>
